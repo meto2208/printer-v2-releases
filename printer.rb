@@ -5,21 +5,21 @@
 class Printer < Formula
   desc "A delightful CLI for printing things V2 version"
   homepage ""
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/meto2208/printer-v2-releases/releases/download/v0.0.1/printer-v2_0.0.1_darwin_amd64.tar.gz"
-      sha256 "b9060dbe334af5fb12b73431b2f9aa80d20d17bca41260c237c54b2f940cd14e"
+      url "https://github.com/meto2208/printer-v2-releases/releases/download/v0.0.2/printer-v2_0.0.2_darwin_amd64.tar.gz"
+      sha256 "fa60b1f91eba62b08cba6a75252f371eb4364de10f255684dff8186f06e74be1"
 
       def install
         bin.install "printer-v2"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/meto2208/printer-v2-releases/releases/download/v0.0.1/printer-v2_0.0.1_darwin_arm64.tar.gz"
-      sha256 "f99f4004ef8b426b107f86d6e2127a9efcb5db27c236d3269f814a9bc6ff6bf8"
+      url "https://github.com/meto2208/printer-v2-releases/releases/download/v0.0.2/printer-v2_0.0.2_darwin_arm64.tar.gz"
+      sha256 "3b475d3d290fa66dbbf277110712f2cdae991f80c35d280948d5dc8af941345b"
 
       def install
         bin.install "printer-v2"
@@ -30,8 +30,8 @@ class Printer < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/meto2208/printer-v2-releases/releases/download/v0.0.1/printer-v2_0.0.1_linux_amd64.tar.gz"
-        sha256 "89223cc3028f4e8cb48925a05213d58b95adf86acf46b40a569716163108c9a2"
+        url "https://github.com/meto2208/printer-v2-releases/releases/download/v0.0.2/printer-v2_0.0.2_linux_amd64.tar.gz"
+        sha256 "50bcbb481f9e1466d52715b90952298ada1bf713fb04e59de03029035f7b7577"
 
         def install
           bin.install "printer-v2"
@@ -40,8 +40,8 @@ class Printer < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/meto2208/printer-v2-releases/releases/download/v0.0.1/printer-v2_0.0.1_linux_arm64.tar.gz"
-        sha256 "af4cc90920a1bb77627c0cb51f67613157662a9f7fe5c2c43368885bf222f2ba"
+        url "https://github.com/meto2208/printer-v2-releases/releases/download/v0.0.2/printer-v2_0.0.2_linux_arm64.tar.gz"
+        sha256 "f324ce0162021699cf1fb7457fa405c972a0b05469fca6ece07076c05eeb9026"
 
         def install
           bin.install "printer-v2"
